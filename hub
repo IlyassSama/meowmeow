@@ -85,3 +85,14 @@ local Button = Tab:CreateButton({
    end,
 })
 
+local Button = Tab:CreateButton({
+   Name = "Damage bzf if have douma top (Weapon)",
+   Callback = function()
+   for i,v in pairs(game.ReplicatedStorage.Player_Data[game.Players.LocalPlayer.Name].EquippedItemStats:GetChildren()) do
+	if v:IsA("StringValue") then
+	v.Value = "Douma Top"
+	end
+	end
+   end,
+})
+
