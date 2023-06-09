@@ -42,11 +42,11 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "90% Damage",
+   Name = "Test Damage",
    Callback = function()
    for i,v in pairs(game.ReplicatedStorage.Player_Data[game.Players.LocalPlayer.Name].EquippedItemStats:GetChildren()) do
 	if v:IsA("StringValue") then
-	v.Value = "Champion Necklace"
+	v.Value = "Polar Mask"
 	end
 	end
    end,
@@ -64,11 +64,11 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-   Name = "Damage mosta7il (Strength)",
+   Name = "Damage mosta7il",
    Callback = function()
    for i,v in pairs(game.ReplicatedStorage.Player_Data[game.Players.LocalPlayer.Name].EquippedItemStats:GetChildren()) do
 	if v:IsA("StringValue") then
-	v.Value = "Akaza Top"
+	v.Value = "Polar Top"
 	end
 	end
    end,
